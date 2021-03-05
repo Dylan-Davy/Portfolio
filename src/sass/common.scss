@@ -1,11 +1,31 @@
-@import './variables.scss';
+@import "./variables.scss";
 
 .header--primary {
+    font-size: 6rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    display: inline-block;
+    background-image: linear-gradient(to right, $colour-light-primary, $colour-dark-primary);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    letter-spacing: 3.5rem;
+    margin-bottom: 7rem;
+    transition: all 0.2s;
 
+    &:hover {
+        transform: scale(1.2);
+        text-shadow: 0.5rem 1rem 2rem rgba(black, 0.2);
+    }
 }
 
 .header--secondary {
-    
+    color: $colour-white;
+    text-transform: uppercase;
+    display: inline-block;
+    font-size: 4rem;
+    font-weight: 400;
+    letter-spacing: 0.2rem;
 }
 
 .link {
@@ -14,7 +34,7 @@
         transition: all 0.3s;
         display: inline-block;
     }
-    
+
     &--text {
         color: $colour-white;
         text-decoration: none;
@@ -24,7 +44,7 @@
         &:active {
             color: $colour-white;
             transform: scale(1.3);
-            border-bottom: 1px hidden $colour-dark-blue;
+            border-bottom: 1px hidden $colour-dark-primary;
             text-shadow: 0.5rem 1rem 2rem rgba(0, 0, 0, 20%);
         }
     }

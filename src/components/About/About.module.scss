@@ -1,7 +1,25 @@
 @import '../../sass/variables.scss';
 
-.About {
+.about {
     padding: 25rem 0;
     margin: -20vh 0;
     background-color: $colour-white;
+    text-align: center;
+
+    &__content {
+        display: flex;
+        justify-content: space-around;
+        flex-direction: row;
+        flex-wrap: wrap;
+        margin: 0 auto;
+        align-items: center;
+        align-content: space-between;
+        width: 90%;
+    }
+}
+
+@media(max-width: 600px) {
+    .about {
+        padding: 35rem 0;
+    }
 }
