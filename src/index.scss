@@ -16,3 +16,24 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+
+@media (min-width: 1920px){
+
+  html {
+    font-size: 75%;
+  }
+}
+
+@media (max-width: 1024px){
+
+  html {
+    font-size: 50%;
+  }
+}
+
+@media (max-width: 600px){
+
+  html {
+    font-size: 37.5%;
+  }
+}

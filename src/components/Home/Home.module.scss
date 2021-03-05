@@ -1,6 +1,34 @@
+@import "../../sass/variables.module.scss";
+
 .Home {
     height: 100vh;
-    padding: 2rem;
-    font-size: 2rem;
-    border: .1rem solid #333;
+    background-image: linear-gradient(to right bottom, rgba($colour-blue, .8), rgba($colour-light-blue, .8));
+    background-size: cover;
+    position: relative;
+    clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
+}
+
+.Title {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    font-size: 3rem;
+}
+
+.Link {
+    &:link,
+    &:visited {
+        color: $colour-white;
+        text-decoration: none;
+        transition: all .3s;
+        display: inline-block;
+    }
+
+    &:hover,
+    &:active {
+        color: $colour-dark-blue;
+        transform: translateY(-.5rem) scale(1.2);
+    }
 }
