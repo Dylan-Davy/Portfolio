@@ -1,10 +1,20 @@
-import styles from './App.module.css';
+import styles from './App.module.scss';
+import Layout from './Layout/Layout';
+import Home from '../components/Home/Home';
+import Projects from '../components/Projects/Projects';
+import Skills from '../components/Skills/Skills';
+import Contact from '../components/Contact/Contact';
+import About from '../components/About/About';
 
 function App() {
   return (
-    <div className={styles.App}>
-      <h2>This webpage will be automatically updated when changes are made to the main branch on <a href="https://github.com/Dylan-Davy/portfolio">Github</a>.</h2>
-    </div>
+    <Layout>
+      <Home />
+      <About />
+      <Projects />
+      <Skills />
+      <Contact />
+    </Layout>
   );
 }
 

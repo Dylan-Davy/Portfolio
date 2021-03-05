@@ -1,8 +1,9 @@
-import React from 'react'
+import React from 'react';
+import styles from './Projects.module.scss';
 
 const Projects = (props) => {
     return (
-        <div>
+        <div className={styles.Projects}>
             
         </div>
     )
