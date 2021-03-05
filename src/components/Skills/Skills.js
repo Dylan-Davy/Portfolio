@@ -3,7 +3,7 @@ import styles from './Skills.module.scss';
 
 const Skills = (props) => {
     return (
-        <div className={styles.Skills}>
+        <div id="Skills" className={styles.Skills}>
             
         </div>
     )
