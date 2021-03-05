@@ -3,7 +3,7 @@ import styles from './About.module.scss';
 
 const About = (props) => {
     return (
-        <div className={styles.About}>
+        <div id="About" className={styles.About}>
             
         </div>
     )

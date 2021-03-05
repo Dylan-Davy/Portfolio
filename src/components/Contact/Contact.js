@@ -3,7 +3,7 @@ import styles from './Contact.module.scss';
 
 const Contact = (props) => {
     return (
-        <div className={styles.Contact}>
+        <div id="Contact" className={styles.Contact}>
             
         </div>
     )
