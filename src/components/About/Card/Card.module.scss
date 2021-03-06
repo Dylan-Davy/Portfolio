@@ -7,10 +7,9 @@
     position: relative;
     height: 50rem;
     width: 35rem;
-    text-align: center;
     margin: 5rem;
 
-    @include moveLeftIterable(3, 0);
+    @include moveLeftIterable(3, .2);
 
     &__side {
         height: 50rem;

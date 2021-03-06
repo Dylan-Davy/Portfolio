@@ -1,14 +1,14 @@
 @import './animations.scss';
 
 @mixin moveLeft($delay) {
-    animation: moveLeftAnimation 1s ease-out #{$delay}s;
+    animation: moveLeftAnimation .6s ease-out #{$delay}s;
     animation-fill-mode: backwards;
 }
 
 @mixin moveLeftIterable($children, $delay) {
     @for $i from 1 through $children {
       &:nth-last-child(#{$i}) {
-        animation: moveLeftAnimation .8s ease-out #{$i * .2 + $delay}s;
+        animation: moveLeftAnimation .6s ease-out #{($i - 1) * .2 + $delay}s;
         animation-fill-mode: backwards;
       }
     }
