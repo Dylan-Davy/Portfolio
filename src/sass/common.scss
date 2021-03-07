@@ -6,14 +6,18 @@
     text-transform: uppercase;
     font-weight: 700;
     display: inline-block;
-    background-image: linear-gradient(to right, $colour-light-primary, $colour-dark-primary);
-    -webkit-background-clip: text;
-    background-clip: text;
-    color: transparent;
     letter-spacing: 3.5rem;
     margin-bottom: 7rem;
     transition: all 0.2s;
+    color: $colour-white;
     @include moveLeft(0);
+    
+    &--coloured {
+        background-image: linear-gradient(to right, $colour-light-primary, $colour-dark-primary);
+        -webkit-background-clip: text;
+        background-clip: text;
+        color: transparent;
+    }
 
     &:hover {
         transform: scale(1.2);

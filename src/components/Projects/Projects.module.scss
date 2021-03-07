@@ -4,7 +4,9 @@
     background-image: linear-gradient(to right bottom, rgba($colour-primary, .8), rgba($colour-light-primary, .8));
     background-size: cover;
     position: relative;
+    padding-top: 20rem;
     clip-path: polygon(0 0, 100% 20%, 100% 80%, 0 100%);
+    text-align: center;
 
     height: 100rem;
 }

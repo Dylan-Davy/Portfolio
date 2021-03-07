@@ -5,7 +5,7 @@ import Card from './Card/Card';
 const About = (props) => {
     return (
         <div id="About" className={styles.about}>
-            <h1 className={'header--primary'}>About</h1>
+            <h1 className={'header--primary header--primary--coloured'}>About</h1>
             <div className={styles['about__content']}>
                 <Card heading='Card 1' />
                 <Card heading='Card 2' />

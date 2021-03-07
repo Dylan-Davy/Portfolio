@@ -9,7 +9,7 @@
     width: 35rem;
     margin: 5rem;
 
-    @include moveLeftIterable(3, .2);
+    @include moveLeftIterable(3, .4);
 
     &__side {
         height: 50rem;
